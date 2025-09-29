@@ -45,7 +45,7 @@ Before proceeding, ensure you have the following tools installed on your system:
 3. **Navigate to the provisioning directory**
 
    ```bash
-   cd vagrant/Manual_provisioning
+   cd vagrant/Manual_provisioning_WinMacIntel
    ```
 
 4. **Bring up the VMs**
