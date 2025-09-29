@@ -2,6 +2,8 @@
 
 This guide provides step-by-step instructions to manually provision and deploy the **VProfile** application stack using **Vagrant**, **VirtualBox**, and multiple Linux-based virtual machines.
 
+![vPro-app Architectural Diagram](https://ibb.co/BVt4J3HD)
+
 ## 🧰 Prerequisites
 
 Before proceeding, ensure you have the following tools installed on your system:
@@ -29,7 +31,7 @@ Before proceeding, ensure you have the following tools installed on your system:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/hkhcoder/vprofile-project.git
+   git clone https://github.com/addaeDevOPs/vPro-app.git
    cd vprofile-project
    ```
 
@@ -99,7 +101,9 @@ sudo dnf install epel-release -y
 sudo dnf install git mariadb-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
+
 sudo mysql_secure_installation
+![Please refer from this image link](https://ibb.co/HTb7ZZYV)
 ```
 # Database
 Here,we used Mysql DB 
@@ -125,7 +129,7 @@ EXIT;
 
 ```bash
 cd /tmp/
-git clone -b local https://github.com/hkhcoder/vprofile-project.git
+git clone -b local https://github.com/addaeDevOPs/vPro-app.git
 cd vprofile-project
 mysql -u root -padmin123 accounts < src/main/resources/db_backup.sql
 ```
@@ -292,7 +296,7 @@ export MAVEN_OPTS="-Xmx512m"
 **Build & Deploy:**
 
 ```bash
-git clone -b local https://github.com/hkhcoder/vprofile-project.git
+git clone -b local https://github.com/addaeDevOPs/vPro-app.git
 cd vprofile-project
 vim src/main/resources/application.properties  # Update backend config
 
