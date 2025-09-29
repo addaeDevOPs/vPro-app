@@ -1,8 +1,9 @@
 # VProfile Project Manual Provisioning Setup
 
 This guide provides step-by-step instructions to manually provision and deploy the **VProfile** application stack using **Vagrant**, **VirtualBox**, and multiple Linux-based virtual machines.
-
+```
 ![vPro-app Architectural Diagram](https://ibb.co/BVt4J3HD)
+```
 
 ## 🧰 Prerequisites
 
