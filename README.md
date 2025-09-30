@@ -101,7 +101,9 @@ sudo dnf install epel-release -y
 sudo dnf install git mariadb-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
+```
 
+```
 sudo mysql_secure_installation
 ```
 **[mysql secure installation image](https://ibb.co/HTb7ZZYV)**
