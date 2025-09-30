@@ -1,9 +1,8 @@
 # VProfile Project Manual Provisioning Setup
 
 This guide provides step-by-step instructions to manually provision and deploy the **VProfile** application stack using **Vagrant**, **VirtualBox**, and multiple Linux-based virtual machines.
-```
-![vPro-app Architectural Diagram](https://ibb.co/BVt4J3HD)
-```
+
+**[vPro-app Architectural Diagram](https://ibb.co/BVt4J3HD)**
 
 ## 🧰 Prerequisites
 
@@ -33,7 +32,7 @@ Before proceeding, ensure you have the following tools installed on your system:
 
    ```bash
    git clone https://github.com/addaeDevOPs/vPro-app.git
-   cd vprofile-project
+   cd vPro-app
    ```
 
 2. **Switch to the local branch**
@@ -104,7 +103,7 @@ sudo systemctl start mariadb
 sudo systemctl enable mariadb
 
 sudo mysql_secure_installation
-![Please refer from this image link](https://ibb.co/HTb7ZZYV)
+**[mysql secure installation image](https://ibb.co/HTb7ZZYV)**
 ```
 # Database
 Here,we used Mysql DB 
@@ -131,7 +130,7 @@ EXIT;
 ```bash
 cd /tmp/
 git clone -b local https://github.com/addaeDevOPs/vPro-app.git
-cd vprofile-project
+cd vPro-app
 mysql -u root -padmin123 accounts < src/main/resources/db_backup.sql
 ```
 
@@ -230,6 +229,7 @@ sudo dnf install epel-release java-17-openjdk java-17-openjdk-devel git wget -y
 cd /tmp/
 wget https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.26/bin/apache-tomcat-10.1.26.tar.gz
 tar xzvf apache-tomcat-10.1.26.tar.gz
+sudo mkdir -p /usr/local/tomcat
 sudo useradd --home-dir /usr/local/tomcat --shell /sbin/nologin tomcat
 sudo cp -r apache-tomcat-10.1.26/* /usr/local/tomcat/
 sudo chown -R tomcat.tomcat /usr/local/tomcat
@@ -298,7 +298,7 @@ export MAVEN_OPTS="-Xmx512m"
 
 ```bash
 git clone -b local https://github.com/addaeDevOPs/vPro-app.git
-cd vprofile-project
+cd vPro-app
 vim src/main/resources/application.properties  # Update backend config
 
 /usr/local/maven3.9/bin/mvn install
@@ -357,9 +357,8 @@ systemctl restart nginx
 
 ## ✅ Final Notes
 
-* Ensure all VMs are running:
+* Access the app via the link below:
 
   ```bash
-  vagrant status
+  http://192.168.56.11:80
   ```
-* You should now be able to access the app via the **
