@@ -103,8 +103,9 @@ sudo systemctl start mariadb
 sudo systemctl enable mariadb
 
 sudo mysql_secure_installation
-**[mysql secure installation image](https://ibb.co/HTb7ZZYV)**
 ```
+**[mysql secure installation image](https://ibb.co/HTb7ZZYV)**
+
 # Database
 Here,we used Mysql DB 
 sql dump file:
