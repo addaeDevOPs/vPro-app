@@ -2,10 +2,6 @@
 
 This guide provides step-by-step instructions to manually provision and deploy the **VProfile** application stack using **Vagrant**, **VirtualBox**, and multiple Linux-based virtual machines.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b7d79cdb35394819d663b0b6d086d5f93ebeb80c
 **[vPro-app Architectural Diagram](https://ibb.co/BVt4J3HD)**
 
 ## 🧰 Prerequisites
